@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+:root {
+  --blue-10: #012a4a;
+  --blue-09: #013a63;
+  --blue-08: #01497c;
+  --blue-07: #014f86;
+  --blue-06: #2a6f97;
+  --blue-05: #2c7da0;
+  --blue-04: #468faf;
+  --blue-03: #61a5c2;
+  --blue-02: #89c2d9;
+  --blue-01: #a9d6e5;
+}
+.content {
+  display: flex;
+  height: 100%;
+}
+/* leftside */
+.leftdiv {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.leftdiv img {
+  width: 100%;
+  height: 40%;
+}
+
+.leftdiv-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 60%;
+  background-color: var(--blue-05);
+  text-align: center;
+  justify-content: space-evenly;
+}
+.leftdiv .leftdiv-list .list {
+  border-radius: 4px;
+  border: 2px solid var(--blue-10);
+
+  align-items: center;
+  text-transform: capitalize;
+  background-color: var(--blue-10);
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 6px 0;
+  margin: 0px 20px;
+  color: var(--blue-01);
+}
+.leftdiv .leftdiv-list .list-point {
+  border-radius: 4px;
+  align-items: center;
+  text-transform: capitalize;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 6px 0;
+  margin: 0px 20px;
+  color: var(--blue-07);
+}
+
+/* hover */
+.leftdiv .leftdiv-list .list:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--blue-10);
+  border: 2px solid var(--blue-10);
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+/* rightside */
+.content .rightdiv {
+  padding: 50px 80px;
+  background-color: var(--blue-01);
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content .rightdiv .title {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  padding: 12px;
+  border: 1px solid var(--blue-10);
+  color: var(--blue-10);
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 35px;
+}
+
+.content .rightdiv .sous-title {
+  color: var(--blue-10);
+  padding-top: 30px;
+  padding-left: 10px;
+  font-size: 28px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 200;
+}
+
+.content .rightdiv .sous-title p {
+  font-family: "Roboto Slab", serif;
+  font-weight: bolder;
+}
+.content .rightdiv .lorem {
+  padding: 20px 10px;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--blue-10);
+}
+
+.content .rightdiv .cards {
+  display: flex;
+  background-color: var(--blue-10);
+  width: 100%;
+  flex: 1;
+  box-shadow: 5px 5px 20px 2px var(--blue-10);
+}
+
+.content .rightdiv .cards .box {
+  background-color: var(--blue-01);
+  color: var(--blue-10);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 10px;
+  margin: 10px 10px;
+  font-size: 28px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 900;
+  flex: 1;
+  text-align: center;
+}
+.content .rightdiv .cards .box p {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--blue-08);
+}
